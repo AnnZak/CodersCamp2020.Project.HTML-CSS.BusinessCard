@@ -1,0 +1,60 @@
+.heading-curriculum {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.heading-curriculum-photo {
+  flex: 1;
+}
+
+.heading-curriculum-photo img {
+  border-radius: 50%;
+  width: 60%;
+}
+
+.heading-curriculum-description {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.heading-curriculum-description > ul {
+  list-style: none;
+  width: 60%;
+}
+
+.heading-curriculum-description > ul > li {
+  padding: 10px 0px;
+  border-top: 2px solid rgba(102, 136, 149, 0.4);
+}
+
+.heading-curriculum-description > ul > li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.heading-curriculum-description > ul > li a:hover {
+  cursor: pointer;
+}
+
+.heading-curriculum-description > ul > li:last-child {
+  border-bottom: 2px solid rgba(102, 136, 149, 0.4);
+}
+
+.heading-curriculum-description #list {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.heading-curriculum-description #list > li {
+  list-style: none;
+  padding: 5px 0px;
+}
+
+.heading-curriculum-description a:focus + #list {
+  max-height: 15em;
+}

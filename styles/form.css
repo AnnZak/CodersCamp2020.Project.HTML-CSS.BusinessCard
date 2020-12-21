@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.form-wrapper > textarea {
+  flex: 1;
+}
+
+.form-wrapper input {
+  width: 100%;
+  margin: 5px;
+}
+
+.form-wrapper input, .form-wrapper textarea {
+  padding: 12px 20px;
+  border: 2px solid #668895;
+  border-radius: 18px 0%;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-wrapper .form-button {
+  background-color: #f5b553;
+  border: none;
+  color: white;
+}
+
+.form-wrapper .form-button:hover {
+  background: white;
+  border: 1px solid #ffc53d;
+  color: black;
+}

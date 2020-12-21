@@ -1,0 +1,27 @@
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #668895;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo p {
+  color: white;
+  font-family: 'Pompiere', cursive;
+  font-size: 40px;
+}
+
+.footer-mail {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .social-icons {
+  background-color: white;
+  color: #668895;
+}

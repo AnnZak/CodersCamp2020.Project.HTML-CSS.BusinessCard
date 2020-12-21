@@ -1,18 +1,225 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
+  <head>
+    <title>Study with Ann</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Qwigley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script defer src="https://kit.fontawesome.com/7157ae1e66.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <p>mathAnka</p>
+      </div>
+      <div class="dropdown">
+        <ul>
+          <li><a href="#aboutMe">O mnie</a></li>
+          <li><a href="#aboutCourse">O kursie</a></li>
+          <li><a href="#priceList">Cennik</a></li>
+          <li><a href="#form">Formularz</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <header class="body-header">
+      <div class="body-header-title">
+        <h1>Hello!</h1>
+        <p>Nazywam się Ania i jestem tu aby pomóc Ci z matematyki.</p>
+        <p>Poznaj autorski program kursów online, dzięki którym pomogę ci nauczyć się matematyki na każdym poziomie</p>
+        <button><a href="#priceList">Poznaj ofertę</a></button>
+        
+        <div class="body-header-title-social-media">
+          <a href="https://www.linkedin.com/in/anna-%C5%BCak-575233140/" target="_blank">
+            <i class="fab fa-linkedin-in social-icons"></i>
+          </a>
+          <a href="https://github.com/AnnZak" target="_blank">
+            <i class="fab fa-github social-icons"></i>
+          </a>
+          <a href="https://www.facebook.com/ania.zak.37" target="_blank">
+            <i class="fab fa-facebook-f social-icons facebook-icon"></i>
+          </a>
+        </div>
+      </div>
+        
+      <div class="body-header-img">
+        <img src="img/AnnaZak.jpg">
+      </div>
+    </header>
+    
+    <section id ="aboutMe" class="about-me">
+      <div class="about-me-img">
+        <img src="img/AnnaZak.jpg"/>
+      </div>
+      <div class="about-me-description">
+        <h2>Kilka słów o mnie</h2>
+        <p>Jestem absolwentką matematyki stosowanej na Uniwersytecie Jagiellońskim. Od 8 lat udzielam korepetycji na wszystkich poziomach: od szkoły podstawowej aż po studia. Moim celem jest nie tylko suche przedstawienie teori ale również pomoc w rozumieniu materiału. Pokaże Ci czym jest matematyka i gdzie jest najczęściej używana. Na codzień jestem analitykiem danych. Jeśli chcesz poznać moją ścieżkę zawodową kliknij w poniższy link.</p>
+        <button><a href="https://www.linkedin.com/in/anna-%C5%BCak-575233140/" target="_blank">Ścieżka zawodowa</a></button>
+      </div>
+    </section>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <section id="priceList"> 
+      <h2>Wybierz swój abonament</h2>
+      <div class="price-offer">
+        <div class="price-offer-box">
+          <div class="price">
+            <span class="underline underline--stars">Pakiet Podstawowy</span>
+            <p>500 PLN/ 1 rok</p>
+          </div>
+          <div class="plan">
+            <ul>
+              <li class="available">Dostęp do podstawowej bazy wideo</li>
+              <li class="available">Dostep do prezentacji</li>
+              <li class="notAvailable">Brak reklam</li>
+              <li class="notAvailable">Dostęp do artykułów</li>
+              <li class="notAvailable">Zadania z gwiazdką</li>
+              <li class="notAvailable">Indywidulany plan nauczania</li>
+              <li class="notAvailable">Dostep do konkursów</li>
+              <li class="notAvailable">Zajęcia z korepetytorem</li>
+            </ul>
+            <button>Wybierz</button>
+          </div>
+        </div>
+        <div class="price-offer-box">
+          <div class="price">
+            <span class="underline underline--stars">Pakiet Standardowy</span>
+            <p>700 PLN/ 1 rok</p>
+          </div>
+          <div class="plan">
+            <ul>
+              <li class="available">Dostęp do podstawowej bazy wideo</li>
+              <li class="available">Dostep do prezentacji</li>
+              <li class="available">Brak reklam</li>
+              <li class="available">Dostęp do artykułów</li>
+              <li class="available">Zadania z gwiazdką</li>
+              <li class="notAvailable">Indywidulany plan nauczania</li>
+              <li class="notAvailable">Dostep do konkursów</li>
+              <li class="notAvailable">Zajęcia z korepetytorem</li>
+            </ul>
+            <button>Wybierz</button>
+          </div>
+          
+        </div>
+        
+        <div class="price-offer-box">
+          <div class="price">
+            <span class="underline underline--stars">Pakiet Premium</span>
+            <p>1000 PLN/ 1 rok</p>
+          </div>
+          <div class="plan">
+            <ul>
+              <li class="available">Dostęp do podstawowej bazy wideo</li>
+              <li class="available">Dostep do prezentacji</li>
+              <li class="available">Brak reklam</li>
+              <li class="available">Dostęp do artykułów</li>
+              <li class="available">Zadania z gwiazdką</li>
+              <li class="available">Indywidulany plan nauczania</li>
+              <li class="available">Dostep do konkursów</li>
+              <li class="available">Zajęcia z korepetytorem</li>
+            </ul>
+            <button>Wybierz</button>
+          </div>
+        </div>
+    </section>
 
-</head>
+    <section id="aboutCourse">
+      <h2>Program kursu</h2>
+      <div class="heading-curriculum">
+        <div class="heading-curriculum-photo">
+          <img src="img/AnnaZak.jpg">
+        </div>
+        <div class="heading-curriculum-description">
+          <ul>
+            <li><a href="#nowhere">Szkoła podstawowa</a>
+              <ul id="list">
+                <li>Działania na liczbach naturalnych</li>
+                <li>Ułamki zwykłe i dziesiętne</li>
+                <li>Elementy algebry</li>
+                <li>Proste i odcinki</li>
+                <li>Wielokąty, koła i okręgi</li>
+                <li>Bryły</li>
+                <li>Elementy statystyki opisowej</li>
+              </ul>
+            </li>
+            <li><a href="#nowhere">Liceum</a>
+              <ul id="list">
+                <li>Liczby rzeczywiste</li>
+                <li>Wyrażenia algebraiczne</li>
+                <li>Równania i nierówności</li>
+                <li>Układy równań</li>
+                <li>Funkcje</li>
+                <li>Ciągi</li>
+                <li>Trygonometria</li>
+                <li>Planimetria</li>
+                <li> Geometria analityczna na płaszczyźnie kartezjańskiej</li>
+                <li>Stereometria</li>
+                <li>Kombinatoryka</li>
+              </ul>
+            </li>
+            <li><a href="#nowhere">Szkoła wyższa</a>
+              <ul id="list">
+                <li>Liczby zespolone</li>
+                <li>Macierze</li>
+                <li>Granica ciągu</li>
+                <li>Granica funkcji</li>
+                <li>Pochodne</li>
+                <li>Szeregi liczbowe</li>
+                <li>Całki</li>
+                <li>Badanie przebiegu zmienności funkcji</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<body>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
 
-</body>
+    <section id="form">
+      <h2>Zainteresowała Cię moja oferta?</h2>
+      <p>Zostaw wiadomość i czekaj na szybką odpowiedź</p>
+      <form class="form">
+        <div class="form-wrapper">
+          <label class="form-wrapper-label" for="name">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Imię" pattern="[a-zA-Z]{3,}" required>
+          </label> 
+          <label class="form-wrapper-label" for="mail">
+            <input class="form-input" type="email" name="mail" id="mail" placeholder="Twój adres email" required>
+            <input class="form-button" type="submit" value="Wyślij">
+          </label> 
+        </div>
+        <div class="form-wrapper">
+          <label class="form-label" for="comments">
+            <textarea class="form-comments" id="comments" placeholder="Wiadomość" rows="6"></textarea>
+            
+          </label> 
+        </div>
+       </form>
+    </section>
+
+    <section id="contact">
+      <div class="footer">
+        <div class="footer-logo">
+          <p>mathAnka</p>
+        </div>
+        <div class="footer-mail">
+          <p>zak.anna.94@gmail.com</p>
+        </div>
+        <div class="body-header-title-social-media">
+          <a href="https://www.linkedin.com/in/anna-%C5%BCak-575233140/" target="_blank">
+            <i class="fab fa-linkedin-in social-icons"></i>
+          </a>
+          <a href="https://github.com/AnnZak" target="_blank">
+            <i class="fab fa-github social-icons"></i>
+          </a>
+          <a href="https://www.facebook.com/ania.zak.37" target="_blank">
+            <i class="fab fa-facebook-f social-icons facebook-icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </body>
 </html>
