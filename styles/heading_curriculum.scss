@@ -1,3 +1,4 @@
+@import '/scss/variables';
 
 .heading-curriculum {
   display: flex;
@@ -30,11 +31,11 @@
 
       > li {
         padding: 20px 0px;
-        border-top: 2px solid rgba(102, 136, 149,0.4);
+        border-top: 2px solid $curriculum-border;
 
         a {
           text-decoration: none;
-          color: black;
+          color: $primary-text;
           font-weight: bold;
         }
 
@@ -44,7 +45,7 @@
       }
 
       > li:last-child {
-        border-bottom: 2px solid rgba(102, 136, 149,0.4);
+        border-bottom: 2px solid $curriculum-border;
       }
     }
 
@@ -71,13 +72,6 @@
 
     &-photo {
       display: none;
-    }
-
-    &-description {
-      
-      #list {
-
-      }
     }
   }
 }

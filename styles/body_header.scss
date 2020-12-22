@@ -1,3 +1,5 @@
+@import '/scss/variables';
+
 * {
   margin: 0px;
   padding: 0px;
@@ -16,7 +18,7 @@
     padding-left: 15%;
 
     h1 {
-      color: rgb(102, 136, 149);
+      color: $border-dark;
       transform: rotate(-10deg);
       margin-left: -15px;  
       font-family: 'Qwigley';
@@ -42,8 +44,8 @@
 
     button {
       padding: 15px 30px;
-      color: #ffffff;
-      background-color: #f5b553;
+      color: $button-text;
+      background-color: $primary-orange;
       text-align: center;
       border-radius: 25% 0%;
       border: none;
@@ -54,7 +56,7 @@
       
       a {
         text-decoration: none;
-        color: white;
+        color: $button-text:;
       }
     }
       
@@ -62,8 +64,8 @@
       display: flex;
 
       .social-icons {
-        color: white;
-        background-color: rgba(102, 136, 149,0.6);
+        color: $button-text:;
+        background-color: $social-icons;
         padding: 5px;
         margin: 20px 5px;
         border-radius: 50%; 

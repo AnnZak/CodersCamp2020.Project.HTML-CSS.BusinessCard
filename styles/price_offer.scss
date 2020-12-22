@@ -1,3 +1,5 @@
+@import '/scss/variables';
+
 section {
   h2 {
     padding-bottom: 30px;
@@ -14,13 +16,13 @@ section {
     margin: 20px;
 
     .price {
-      background-color: rgb(102, 136, 149);
+      background-color: $border-dark;
       text-align: center;
       border-radius: 40px 10px 0% 0%;
       padding: 30px 0px;
 
       p {
-        color: #f5b553;
+        color: $primary-orange;
         margin-top: 10px;
         font-weight: 700;
       }
@@ -35,12 +37,12 @@ section {
         background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg");
         background-position: 0 1.6em;
         background-size: 100px 20px;
-        color: #f2f3f8;
+        color: $price-underline;
       }
     }
 
     .plan {
-      border: 2px solid rgb(102, 136, 149);
+      border: 2px solid $border-dark;
       border-radius: 0% 0% 40px 10px;
       display: flex; 
       flex-direction: column;
@@ -64,7 +66,7 @@ section {
 
         li[class="available"]::before {
             content: "\2022";
-            color: #f5b553;
+            color: $primary-orange;
             font-weight: 900;
             display: inline-block; 
             width: 1em;
@@ -73,7 +75,7 @@ section {
 
         li[class="notAvailable"]::before {
           content: "\2022";
-          color: rgba(102, 136, 149, 0.4);
+          color: $curriculum-border;
           font-weight: bold;
           display: inline-block; 
           width: 1em;
@@ -81,14 +83,14 @@ section {
         }
 
         li[class="notAvailable"] {
-          color: rgba(102, 136, 149, 0.4);
+          color: $curriculum-border;
         }
       }      
       
       button { 
         width: fit-content;
         padding: 10px 40px;
-        border: 2px solid #f5b553;
+        border: 2px solid $primary-orange;
         text-align: center;
         border-radius: 25px 0%;
         font-size: 14px;
@@ -98,13 +100,9 @@ section {
       } 
 
       button:hover {
-        background-color: #f5b553;
-        color: white;
-
-      }  
-    
+        background-color: $primary-orange;
+        color: $button-text;
+       }  
     }
-    
-    
   }
 }

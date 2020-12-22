@@ -1,21 +1,23 @@
+@import '/scss/variables';
+
 .footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #668895;
+  background-color: $border-dark;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   
   &-logo p {
-    color: white;
+    color: $button-text;
     font-family: 'Pompiere', cursive;
     font-size: 40px;
   }
 
   &-mail {
-    color: white;
+    color: $button-text;
     font-size: 20px;
   }
 
@@ -23,17 +25,17 @@
     width: 22%;
     height: auto;
     font-size: 0.8em;
-    color: white;
+    color: $button-text;
 
     a {
       text-decoration: none;
-      color: white;
+      color: $button-text;
     }
   }
   
   .social-icons {
-    background-color: white;
-    color: #668895;
+    background-color: $button-text;
+    color: $border-dark;
   }
 }
 

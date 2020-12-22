@@ -1,3 +1,5 @@
+@import '/scss/variables';
+
 * {
   box-sizing: border-box;
 }
@@ -26,22 +28,22 @@ p {
        
     input, textarea {
       padding: 12px 20px;
-      border: 2px solid  rgb(102, 136, 149);
+      border: 2px solid  $border-dark;
       border-radius: 18px 0%;
       font-size: 14px;
       outline: none;
     }
 
     .form-button {
-      background-color: #f5b553;
+      background-color: $primary-orange;
       border: none;
-      color: white;
+      color: $button-text;
       }
 
     .form-button:hover {
-      background: white;
-      border: 1px solid #ffc53d;
-      color:black;
+      background: $button-text;
+      border: 1px solid $primary-orange;
+      color: $primary-text;
     }
   }
 }
