@@ -7,10 +7,10 @@ body {
 }
 
 nav.navbar {
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Arsenal', sans-serif;
   background-color: rgb(250, 250, 250);
@@ -22,7 +22,8 @@ nav.navbar .logo {
   align-items: center;
   background-color: #f5b553;
   padding: 8px 20px;
-  margin: 0px;
+  margin-left: 15%;
+ 
 }
 
 nav.navbar .logo p{
@@ -38,14 +39,13 @@ nav .dropdown ul {
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
+  padding: 0% 15% 0% 5%;
+  width: 600px;
 }
 
 nav .dropdown ul li a {
   display: block;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   color: #313030;;
   font-size: 18px;
@@ -69,20 +69,16 @@ nav.navbar ul li a:hover:before {
   left:calc(50% - 5px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
   nav.navbar {
     display: flex;
     justify-content: space-between;
   } 
 
-  nav.navbar .logo {
-    margin-left: 20px;
-  }
-
   nav div.dropdown {
     width: auto;
-}
+  }
 
   nav .dropbtn {
     display: flex;
