@@ -7,27 +7,31 @@
 
 .heading-curriculum-photo {
   flex: 1;
+  margin-left: 1%;
 }
 
 .heading-curriculum-photo img {
   border-radius: 50%;
-  width: 60%;
+  width: 70%;
+  max-width: 350px;
+  height: auto;
+  min-width: 300px;
 }
 
 .heading-curriculum-description {
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .heading-curriculum-description > ul {
   list-style: none;
-  width: 60%;
-  overflow: auto;
+  width: 70%;
 }
 
 .heading-curriculum-description > ul > li {
-  padding: 10px 0px;
+  padding: 20px 0px;
   border-top: 2px solid rgba(102, 136, 149, 0.4);
 }
 
@@ -53,9 +57,15 @@
 
 .heading-curriculum-description #list > li {
   list-style: none;
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 
 .heading-curriculum-description a:focus + #list {
   max-height: 15em;
+}
+
+@media screen and (max-width: 600px) {
+  .heading-curriculum-photo {
+    display: none;
+  }
 }

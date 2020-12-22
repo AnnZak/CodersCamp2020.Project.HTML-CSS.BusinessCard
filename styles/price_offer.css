@@ -29,6 +29,7 @@ section h2 {
 .price-offer-box .price .underline {
   background-repeat: repeat-x;
   padding: 10px 0px;
+  font-size: 18px;
 }
 
 .price-offer-box .price .underline--stars {
@@ -48,14 +49,15 @@ section h2 {
 }
 
 .price-offer-box .plan ul {
-  margin: 20px 5px;
+  padding: 15px;
+  padding-left: calc(15px + 2em);
+  padding-bottom: calc(15px + 10px);
   list-style: none;
   width: 250px;
 }
 
 .price-offer-box .plan ul li {
-  line-height: 30px;
-  overflow: auto;
+  line-height: 25px;
 }
 
 .price-offer-box .plan ul li :last-child {

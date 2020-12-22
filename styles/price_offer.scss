@@ -28,6 +28,7 @@ section {
       .underline {
         background-repeat: repeat-x;
         padding: 10px 0px;
+        font-size: 18px;
       }   
 
       .underline--stars {
@@ -47,13 +48,14 @@ section {
       align-items: center;
 
       ul {
-        margin: 20px 5px;
+        padding: 15px;
+        padding-left: calc(15px + 2em);
+        padding-bottom: calc(15px + 10px);
         list-style: none;
         width: 250px;
 
         li {
-          line-height: 30px;
-          overflow: auto;
+          line-height: 25px;
 
           :last-child {
             padding-bottom: 30px;

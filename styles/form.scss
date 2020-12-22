@@ -45,3 +45,26 @@ p {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+    &-wrapper {
+      margin: 0% 10%;
+      
+      input, textarea {
+        width: 80%;
+        margin: 5px 0%;
+      }
+
+      textarea {
+        margin-top: 15px;
+      }
+    }
+
+  }
+}
