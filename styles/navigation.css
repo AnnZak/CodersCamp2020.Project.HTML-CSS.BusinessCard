@@ -68,3 +68,64 @@ nav.navbar ul li a:hover:before {
   border-radius: 100%;
   left:calc(50% - 5px);
 }
+
+@media only screen and (max-width: 600px) {
+
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  nav.navbar .logo {
+    margin-left: 20px;
+  }
+
+  nav div.dropdown {
+    width: auto;
+}
+
+  nav .dropbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: #f5b553;
+    width: 50px;
+    height: 70px;
+    border-radius: 0px 20px;   
+  }
+
+  nav .dropbtn span {
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1; 
+  }
+
+  nav div.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    margin-left: -50px;
+    border-radius: 10px;
+    width: 100px;
+    border: 2px solid #f5b553;  
+  }
+
+  nav .dropdown:hover ul {
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+  }
+
+  
+  nav .dropdown:hover ul li  {
+    width: 100%;
+    text-align: center;
+  }
+}

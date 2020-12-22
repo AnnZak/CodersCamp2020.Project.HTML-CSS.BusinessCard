@@ -65,8 +65,21 @@
   border-radius: 50%;
 }
 
+.body-header-title-social-media .social-icons-animation {
+  animation: iconAnimation 7s infinite;
+}
+
 .body-header-title-social-media .facebook-icon {
   padding: 5px 8px;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .body-header-img {

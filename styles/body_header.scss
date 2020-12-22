@@ -59,11 +59,21 @@
         background-color: rgba(102, 136, 149,0.6);
         padding: 5px;
         margin: 20px 5px;
-        border-radius: 50%;
+        border-radius: 50%; 
+
+        &-animation {
+          animation: iconAnimation 7s infinite;
+        }
       }
+      
       .facebook-icon {
           padding: 5px 8px;
       }
+
+      @keyframes iconAnimation {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg);}
+      }      
     }
   }
 

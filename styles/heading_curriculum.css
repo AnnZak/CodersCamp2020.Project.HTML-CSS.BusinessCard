@@ -23,6 +23,7 @@
 .heading-curriculum-description > ul {
   list-style: none;
   width: 60%;
+  overflow: auto;
 }
 
 .heading-curriculum-description > ul > li {

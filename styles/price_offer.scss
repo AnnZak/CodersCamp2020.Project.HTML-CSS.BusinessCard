@@ -53,6 +53,11 @@ section {
 
         li {
           line-height: 30px;
+          overflow: auto;
+
+          :last-child {
+            padding-bottom: 30px;
+          }
         }
 
         li[class="available"]::before {

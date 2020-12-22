@@ -55,6 +55,11 @@ section h2 {
 
 .price-offer-box .plan ul li {
   line-height: 30px;
+  overflow: auto;
+}
+
+.price-offer-box .plan ul li :last-child {
+  padding-bottom: 30px;
 }
 
 .price-offer-box .plan ul li[class="available"]::before {
