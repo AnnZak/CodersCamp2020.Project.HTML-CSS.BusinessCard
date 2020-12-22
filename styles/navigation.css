@@ -128,4 +128,8 @@ nav.navbar ul li a:hover:before {
     width: 100%;
     text-align: center;
   }
+
+  nav .dropdown:hover ul li a {
+    font-size: 18x;
+  }
 }
