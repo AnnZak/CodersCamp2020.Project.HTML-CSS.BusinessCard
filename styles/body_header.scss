@@ -91,6 +91,7 @@
     img {
       border-radius: 50%;
       width: 80%;
+      min-width: 300px;
       height: auto;
     }
   }
@@ -104,6 +105,9 @@
     align-items: center;
 
     &-title {
+
+      margin-top: -25%;
+      margin-right: 20%;
 
       h1 {
         margin-top: -80px;
@@ -121,7 +125,7 @@
       justify-content: flex-end;
       
       img {
-        width: 40%;
+        width: 50%;
         height: auto;
         margin-top: -40px;
       }

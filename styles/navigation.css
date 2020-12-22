@@ -108,10 +108,12 @@ nav.navbar ul li a:hover:before {
     display: none;
     position: absolute;
     top: 70px;
-    margin-left: -50px;
+    margin-left: -60px;
     border-radius: 10px;
     width: 100px;
-    border: 2px solid #f5b553;  
+    border: 2px solid white; 
+    background-color: #f5b553;
+    padding: 0px; 
   }
 
   nav .dropdown:hover ul {
@@ -124,9 +126,19 @@ nav.navbar ul li a:hover:before {
   nav .dropdown:hover ul li  {
     width: 100%;
     text-align: center;
+    padding-bottom: 5px;
+  }
+
+  nav .dropdown:hover ul li:last-child {
+    padding-bottom: 12px;
   }
 
   nav .dropdown:hover ul li a {
-    font-size: 18x;
+    font-size: 16px;
+    color: white;
+  }
+
+  nav.navbar ul li a:hover:before {
+    background: white;
   }
 }
